@@ -52,6 +52,8 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  display: grid;
+  place-items: center;
 }
 
 /* A elements that don't have a class get default styles */
@@ -88,4 +90,55 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* composition */
+main {
+  width: 90%;
+  border-radius: 10px;
+}
+
+/* utilities */
+.clr-primary-cream {
+  color: var(--clr-primary-cream);
+}
+
+.clr-primary-dark-cyan {
+  color: var(--clr-primary-dark-cyan);
+}
+
+.clr-neutral-dark-blue {
+  color: var(--clr-neutral-dark-blue);
+}
+
+.clr-neutral-grayish-blue {
+  color: var(--clr-neutral-grayish-blue);
+}
+
+.clr-neutral-white {
+  color: var(--clr-neutral-white);
+}
+
+.bg-primary-cream {
+  background-color: var(--clr-primary-cream);
+}
+
+.bg-primary-dark-cyan {
+  background-color: var(--clr-primary-dark-cyan);
+}
+
+.bg-neutral-dark-blue {
+  background-color: var(--clr-neutral-dark-blue);
+}
+
+.bg-neutral-grayish-blue {
+  background-color: var(--clr-neutral-grayish-blue);
+}
+
+.bg-neutral-white {
+  background-color: var(--clr-neutral-white);
+}
+
+.padding-32 {
+  padding: 2rem;
 }
