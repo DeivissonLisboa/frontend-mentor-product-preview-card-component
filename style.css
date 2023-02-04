@@ -10,7 +10,8 @@
   --clr-neutral-white: hsl(0, 0%, 100%);
 
   --fs-1: 0.875rem;
-  --fs-2: 2rem;
+  --fs-2: 1rem;
+  --fs-3: 2rem;
 
   --fw-500: 500;
   --fw-700: 700;
@@ -101,6 +102,10 @@ main {
   overflow: hidden;
 }
 
+h1 {
+  line-height: 2rem;
+}
+
 /* utilities */
 .ff-fraunces {
   font-family: "Fraunces", sans-serif;
@@ -114,6 +119,10 @@ main {
   font-size: var(--fs-2);
 }
 
+.fs-3 {
+  font-size: var(--fs-3);
+}
+
 .fw-500 {
   font-weight: 500;
 }
@@ -124,6 +133,10 @@ main {
 
 .letter-spacing-1 {
   letter-spacing: 0.4rem;
+}
+
+.text-line {
+  text-decoration: line-through;
 }
 
 .clr-primary-cream {
@@ -166,6 +179,14 @@ main {
   background-color: var(--clr-neutral-white);
 }
 
-.padding-16 {
-  padding: 1rem;
+.padding-1 {
+  padding: 1.25rem;
+}
+
+.flow > * + * {
+  margin-top: 0.75rem;
+}
+
+.shadow-1 {
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
 }
