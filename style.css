@@ -119,6 +119,10 @@ button:focus {
   outline: none;
 }
 
+button:active {
+  background-color: #1a4031;
+}
+
 div {
   display: inline-flex;
   align-items: center;
@@ -212,4 +216,20 @@ div {
 
 .shadow-1 {
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 376px) {
+  main {
+    max-width: 35rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .padding-1 {
+    padding: 1.75rem;
+  }
+
+  .flow > * + * {
+    margin-top: 1rem;
+  }
 }
