@@ -98,12 +98,31 @@ select {
 main {
   font-family: "Montserrat", sans-serif;
   width: 90%;
-  border-radius: 10px;
   overflow: hidden;
 }
 
 h1 {
   line-height: 2rem;
+}
+
+button {
+  width: 100%;
+  height: 3rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  gap: 1rem;
+}
+
+button:focus {
+  outline: none;
+}
+
+div {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 /* utilities */
@@ -181,6 +200,10 @@ h1 {
 
 .padding-1 {
   padding: 1.25rem;
+}
+
+.border-radius {
+  border-radius: 10px;
 }
 
 .flow > * + * {
