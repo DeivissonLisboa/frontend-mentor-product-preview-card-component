@@ -9,7 +9,8 @@
   --clr-neutral-grayish-blue: hsl(228, 12%, 48%);
   --clr-neutral-white: hsl(0, 0%, 100%);
 
-  --fs-14: 0.875rem;
+  --fs-1: 0.875rem;
+  --fs-2: 2rem;
 
   --fw-500: 500;
   --fw-700: 700;
@@ -94,11 +95,37 @@ select {
 
 /* composition */
 main {
+  font-family: "Montserrat", sans-serif;
   width: 90%;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 /* utilities */
+.ff-fraunces {
+  font-family: "Fraunces", sans-serif;
+}
+
+.fs-1 {
+  font-size: var(--fs-1);
+}
+
+.fs-2 {
+  font-size: var(--fs-2);
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.letter-spacing-1 {
+  letter-spacing: 0.4rem;
+}
+
 .clr-primary-cream {
   color: var(--clr-primary-cream);
 }
@@ -139,6 +166,6 @@ main {
   background-color: var(--clr-neutral-white);
 }
 
-.padding-32 {
-  padding: 2rem;
+.padding-16 {
+  padding: 1rem;
 }
